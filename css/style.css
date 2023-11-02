@@ -26,6 +26,7 @@ html{
     display:flex;
     flex-wrap: wrap;
 }
+
 .my-col-1-3{
     width:calc(100% / 3); 
 }
@@ -34,12 +35,38 @@ html{
 /*
     HEADER
 */
+header{
+    padding:30px;
+}
+
 header .nav-orange .my-col-1-3 ul li{
     display: inline-block;
-
+    margin-right:10px;
 }
+
+header .nav-orange .my-col-1-3 ul li a{
+    text-decoration:none;
+}
+
 header .container img{
     width:100%;
+}
+
+
+.nav-orange{
+    position:fixed;
+    width:100%;
+    left:0;
+    top:0;
+}
+
+/*
+    MAIN
+*/
+main .container .my-row .my-col-1-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*
@@ -47,6 +74,16 @@ header .container img{
 */
 
 .nav-orange{
-    height:50px;
+    min-height:50px;
     background-color: orangered;
+}
+
+.my-col-1-3{
+    border:1px dashed black;
+}
+
+main .container .my-row .my-col-1-3>*{
+    width:150px;
+    min-height:200px;
+    background-color: lightcoral;
 }

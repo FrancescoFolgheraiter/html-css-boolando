@@ -30,12 +30,19 @@ html{
     justify-content: space-between;
 }
 
+a{
+    text-decoration: none;
+    color:white;
+}
+
 
 /*
     HEADER
 */
 header{
-    padding:30px;
+    color:white;
+    font-size: 2em;
+    padding:50px;
 }
 
 header .nav-orange .my-col-1-3 ul li{
@@ -50,13 +57,19 @@ header .nav-orange .my-col-1-3 ul li a{
 header .container img{
     width:100%;
 }
+header .img-container{
+    width:150px;
+}
 
 .nav-orange{
+    padding:10px 0;
+    background-color: #ff6900;
     position:fixed;
     width:100%;
     left:0;
     top:0;
 }
+
 
 /*
     MAIN
@@ -79,7 +92,7 @@ footer{
     color:white
 }
 .footer-bar{
-    position: absolute;
+    position: fixed;
     bottom:0px;
     width:100%;
     background-color:#1a1a1a;
@@ -89,23 +102,18 @@ footer .my-col-1-2 ul li{
     display:inline-block;
 }
 
-footer .my-col-1-2 ul li a{
-    text-decoration: none;
-    color:white;
-}
+
 
 /*
     DEBUG
 */
 
-.nav-orange{
-    min-height:50px;
-    background-color: orangered;
-}
 
+/*
 .my-col-1-3{
     border:1px dashed black;
 }
+*/
 
 main .container .my-row .my-col-1-3>*{
     width:150px;
